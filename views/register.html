@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Register Page</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/javascripts/register.js"></script>
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+  <div class="main">
+    <div class="title"> Register Now! </div>
+
+    <div class="alrt_prnt">
+      <div id="err_alert" class="alert alert-danger" role="alert"></div>
+      <div class="alert alert-success" role="alert">You have registered successfully.</div>
+    </div>
+
+    <form class="reg_form" method="POST" name="regForm">
+
+      <div class= "reg">
+
+        <div class= "row">
+          <div class= "col-sm-12">
+            <input class="form-control" id="username" type="text" name="username" placeholder="User Name">
+          </div>
+        </div>
+
+        <div class= "row">
+          <div class= "col-sm-12">
+            <input class="form-control" id="password" type="password" name="password"  placeholder="Password">
+          </div>
+        </div>
+
+        <div class= "row">
+          <div class= "col-sm-12 regsubmit">
+            <button onclick="checking()" type="button" class="btn btn-success">sign up</button>
+          </div>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+
+  </body>
+
+</html>
